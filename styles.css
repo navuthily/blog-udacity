@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  color: #414141;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.logo {
+  font-size: 32px;
+  margin: 0;
+  color: #ed1e24;
+}
+.logo-note {
+  margin: 0;
+}
+.intro {
+  display: flex;
+}
+.intro > .img-intro,
+.intro > .intro-right {
+  flex-grow: 1;
+  width: 50%;
+}
+.img-intro {
+  height: 650px;
+  width: 100%;
+  object-fit: cover;
+}
+.intro-right {
+  text-align: center;
+  padding: 20px 0px;
+  height: 650px;
+}
+.intro-right > .img-my-thought {
+  height: 350px;
+  width: auto;
+  object-fit: cover;
+}
+h3 {
+  font-size: 32px;
+}
+.intro-main {
+  margin: auto;
+  width: 300px;
+}
+header {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  position: sticky;
+  z-index: 999;
+  top: -10px;
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-item {
+  list-style-type: none;
+}
+.nav-item .nav-link {
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-item .nav-link.active {
+  color: #ed1e24;
+}
+.list-card {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 32px;
+  width: 900px;
+}
+.post-header {
+  margin: 0;
+}
+.card {
+  display: flex;
+}
+.card > img,
+.card > .card-body {
+  flex-grow: 1;
+  width: 50%;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+.card-img-top {
+  width: 100%;
+}
+.card-title {
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.card-text {
+  margin: 0;
+}
+.hr-line {
+  margin-top: 60px;
+  border: 1px solid rgb(202, 197, 197);
+}
+
+.comment {
+  font-size: 12px;
+  font-weight: 300;
+  color: #7b7777;
+}
+
+.link {
+  padding: 16px 0;
+  text-decoration: none;
+}
+
+footer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.button-primary {
+  background-color: #ed1e24;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  width: 120px;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border-radius: 3px;
+  padding: 14px 16px;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 1px solid gray;
+}
+#contact {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+  flex: 2;
+}
+.contact-content {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 1px solid gray;
+  border-radius: 3px;
+  padding: 14px 16px;
+}
+i {
+  font-size: 24px;
+}
+.contact-input {
+  display: flex;
+  gap: 16px;
+}
+.footer-logo {
+  margin: 0;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+.icon-brands {
+  display: flex;
+  gap: 16px;
+}
+@media screen and (max-width: 1024px) {
+  .intro-main {
+    margin: 0 20px;
+    width: auto;
+  }
+  .list-card {
+    margin: 32px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 32px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    margin: 0 8px;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro > .img-intro,
+  .intro > .intro-right {
+    flex-grow: 1;
+    width: 100%;
+  }
+  .intro-right {
+    text-align: center;
+    padding: 20px 0px;
+    height: auto;
+  }
+  .list-card {
+    margin: 0 20px;
+  }
+  .intro-right > .img-my-thought {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 640px) {
+  body,
+  h3,
+  .logo-note {
+    font-size: 12px;
+  }
+  header {
+    padding: 16px;
+  }
+  .logo {
+    font-size: 16px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .card > img {
+    width: 100%;
+  }
+  .card > .card-body {
+    width: auto;
+    padding: 0 16px;
+  }
+  .list-card {
+    margin: 0;
+    gap: 0;
+  }
+  .hr-line {
+    margin-top: 16px;
+    border: 1px solid rgb(202, 197, 197);
+  }
+  footer {
+    width: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contact-input {
+    display: grid;
+    gap: 20px;
+  }
+}
